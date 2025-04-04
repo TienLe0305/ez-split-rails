@@ -1,0 +1,26 @@
+{
+  "name": "easysplit-rails-backend",
+  "version": "1.0.0",
+  "description": "EzSplitPVN Rails backend - migrated from Express",
+  "main": "none",
+  "scripts": {
+    "start": "rails server -p 5000",
+    "dev": "rails server -p 5000",
+    "setup": "bundle install && rails db:create && rails db:migrate && rails db:seed"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/easysplit.git"
+  },
+  "keywords": [
+    "rails",
+    "api",
+    "expense",
+    "split"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 
