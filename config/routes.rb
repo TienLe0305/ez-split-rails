@@ -8,10 +8,8 @@ Rails.application.routes.draw do
   namespace :api do
     # Users routes
     resources :users
-    
     # Expenses routes
     resources :expenses
-    
     # Summary routes
     get 'summary', to: 'summary#index'
     get 'summary/expense/:expense_id', to: 'summary#expense_summary'
