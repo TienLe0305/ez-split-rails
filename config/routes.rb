@@ -17,4 +17,5 @@ Rails.application.routes.draw do
     get 'summary/expenses-transactions', to: 'summary#expenses_transactions'
     post 'summary/payment/:payment_id', to: 'summary#update_payment'
   end
+  root 'home#index'
 end
