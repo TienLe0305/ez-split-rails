@@ -10,7 +10,7 @@ set :repo_url, 'git@github.com:TienLe0305/ez-split-rails.git'
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, 'apps/ez-split-be'
+set :deploy_to, '/apps/ez-split-be'
 set :pty, true
 set :linked_files, %w[config/database.yml config/application.yml]
 set :linked_dirs, %w[log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads]

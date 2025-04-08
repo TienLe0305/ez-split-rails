@@ -56,10 +56,12 @@
 
 set :stage, :production
 set :rails_env, :production
-set :deploy_to, 'apps/ez-split-be'
+set :deploy_to, '/apps/ez-split-be'
 set :rvm_type, :auto # Defaults to: :auto
 set :rvm_ruby_version, '3.2.2' # Defaults to: 'default'
-server '222.255.214.54', user: :root, roles: %w[web app db]
+server '222.255.214.54', user: 'root', roles: %w[app web db]
+
+role :app, '222.255.214.54'
 
 set :ssh_options, {
   keys: %w[~/.ssh/id_longvo_key_rsa],
